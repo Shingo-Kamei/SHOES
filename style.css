@@ -1,0 +1,107 @@
+html {
+    font-size: 100%;
+}
+
+body {
+    color: #121212;
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+a {
+    color: #121212;
+}
+
+img {
+    /* max-width: 100%; */
+}
+
+li {
+    list-style: none;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    background-color: #fff;
+    padding-top: 0;
+    top: 0;
+    left: 0;
+}
+
+main {
+    max-width: 100%;
+}
+
+.sec-title{
+    text-align: center;
+    font-size: 2.25rem;
+    margin-bottom: 30px;
+    padding-top: 80px;
+}
+
+/* header */
+#header .shoes-title{
+    position: fixed;
+}
+
+#nav ul.nav-menu{
+    text-align: right;
+    margin: 0 50px 0 0 ;
+}
+
+/* main */
+#video {
+    width: 100%;
+}
+
+.video-loop {
+    width: 100%;
+}
+
+
+/* pick up */
+.pick-pict {
+    width: 100%;
+    padding: 0;
+    display: flex;
+}
+
+.pick-pict img{
+    width: 350px;
+    height: 200px;
+    object-fit: cover;
+    padding: 0 30px 0 30px;
+}
+
+/* brand */
+.brand-pict {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    max-width: 1420px;
+    margin: auto;
+}
+
+.brand-pict img {
+    width: 450px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.brand-text {
+    box-shadow: 0 0 8px 4px #ccc;
+}
+
+.brand-content {
+    display: block;
+}
+
+/* contact */
+#contact {
+    width: 100%;
+    background-color: #121212;
+    color: #fff;
+}
+
+.contact-text {}
