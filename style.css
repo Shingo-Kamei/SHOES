@@ -65,7 +65,48 @@ main {
     width: 100%;
     padding: 0;
     display: flex;
+    overflow: hidden;
 }
+
+.pick-pict li:first-child{
+    -webkit-animation: loop 20s -10s linear infinite;
+    animation: loop 20s -10s linear infinite;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    will-change: transform;
+}
+
+.pick-pict li{
+    -webkit-animation: loop2 20s linear infinite;
+    animation: loop2 20s linear infinite;
+}
+
+@keyframes loop {
+    0% {
+      -webkit-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+      transform: translateX(100%);
+    }
+    to {
+      -webkit-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+  }
+  
+  @keyframes loop2 {
+    0% {
+      -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+      transform: translateX(0);
+    }
+    to {
+      -webkit-transform: translateX(-200%);
+      -ms-transform: translateX(-200%);
+      transform: translateX(-200%);
+    }
+  }
+  
 
 .pick-pict img{
     width: 350px;
@@ -77,11 +118,12 @@ main {
 /* brand */
 .brand-pict {
     display: flex;
-    justify-content: space-around;
-    flex-wrap:wrap;
+    justify-content: center;
+    flex-wrap: wrap;
     max-width: 1420px;
     margin: auto;
-}
+    padding-bottom: 30px;
+    gap: 20px;}
 
 .brand-pict img {
     width: 450px;
@@ -100,8 +142,89 @@ main {
 /* contact */
 #contact {
     width: 100%;
+    height: 740px;
     background-color: #121212;
     color: #fff;
 }
 
+.contact-area {
+    display: flex;
+    justify-content: space-around;
+    margin: 70px;
+    padding: 55px;
+}
+
+.contact-form {
+    width: 50%;
+    margin-left: 70px;
+}
+
+.description {
+    width: 50%;
+    margin-left: 70px;
+}
+
+.desc-top {
+    padding-bottom: 30px;
+}
+
+.desc-center {
+    width: 700px;
+    padding-bottom: 30px;
+}
+
+.desc-under {
+    width: 700px;
+    padding-bottom: 30px;
+}
+
 .contact-text {}
+
+.contact-text #name {
+    width:70%;
+    height: 35px;
+}
+
+.text-name {
+    padding-bottom: 25px;
+    margin: 0;
+}
+
+.contact-text #email {
+    width:70%;
+    height: 35px;
+}
+
+.text-email {
+    padding-bottom: 25px;
+    margin: 0;
+}
+
+.contact-text #message {
+    width:70%;
+    height: 70px;
+}
+
+.text-message {
+    padding-bottom: 25px;
+    margin: 0;
+}
+
+#btn {
+    width: 25%;
+    height: 55px;
+    background-color: #121212;
+    color: #fff;
+    border: solid 1px #fff;
+    font-size: larger;
+}
+
+#footer {
+    background-color: #121212;
+    color: #fff;
+    text-align: center;
+}
+
+.footer-title {
+    margin-top: auto;
+}

@@ -54,8 +54,8 @@ $brand_list = $brand->fetchAll();
         <ul class="brand-pict">
             <?php foreach($brand_list as $brand):?>
                 <li class="brand-text">
-                    <img src="<?=$brand["image_brand"];?>" alt="">
-                    <div class="brand-content">
+                    <img src="<?=$brand["image_brand"];?>" alt="<?=$brand["alt"];?>">
+                    <div class="brand-content"><h4><?=$brand["name"];?></h4>
                         <p class="top">テキストテキストテキスト</p>
                         <p class="center">テキストテキストテキスト</p>
                         <p class="under">テキストテキストテキスト</p>
@@ -65,25 +65,33 @@ $brand_list = $brand->fetchAll();
         </ul>
     </section>
 
-
     <section id="contact">
     <h2 class="sec-title">CONTACT</h2>
-        <form action="#">
-            <dl class="contact-text">
-                <dt><label for="name">Name:</label></dt>
-                <dd><input type="text" id="name" name="your-name"></dd>
-                <dt><label for="email">Mail:</label></dt>
-                <dd><input type="email" id="email" name="your-email"></dd>
-                <dt><label for="message">Message:</label></dt>
-                <dd><textarea id="message" name="your-message"></textarea></dd>
-            </dl>
-            <div class="button"><input type="submit" value="SEND"></div>
-        </form>
+        <div class="contact-area">
+            <div class="description">
+                <p class="desc-top">テキストテキストテキストテキストテキストテキストテキスト</p>
+                <p class="desc-center">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+                <p class="desc-under">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            </div>
+
+            <form class="contact-form" action="#">
+                <dl class="contact-text">
+                    <dt><label for="name">Name:</label></dt>
+                    <dd class="text-name"><input type="text" id="name" name="your-name"></dd>
+                    <dt><label for="email">Mail:</label></dt>
+                    <dd class="text-email"><input type="email" id="email" name="your-email"></dd>
+                    <dt><label for="message">Message:</label></dt>
+                    <dd class="text-message"><textarea id="message" name="your-message"></textarea></dd>
+                </dl>
+                <div class="button"><input type="submit" id="btn" value="SEND"></div>
+            </form>
+        </div>
+        
     </section>
 </main>
 
 <footer id="footer">
-    <p>company OutletShoes</p>
+    <p class="footer-title">company OutletShoes</p>
 </footer>
     
     

@@ -3,34 +3,40 @@ class Brand
 {
     private $brand = [
         [
-            'id' => 11,
-            'alt' => 'puma',
+            'id' => 1,
+            'name' => 'puma',
+            'alt' => 'puma img brand',
             'image_brand' => 'img/puma.jpg'
-
+            
         ],
         [
-            'id' => 12,
-            'alt' => 'nike',
+            'id' => 2,
+            "name" => "nike",
+            'alt' => 'nike img brand',
             'image_brand' => 'img/nike.jpg'
         ],
         [
-            'id' => 13,
-            'alt' => 'converse',
+            'id' => 3,
+            "name" => "converse",
+            'alt' => 'converse img brand',
             'image_brand' => 'img/converse.jpg'
         ],
         [
-            'id' => 14,
-            'alt' => 'adidas',
+            'id' => 4,
+            "name" => "adidas",
+            'alt' => 'adidas img brand',
             'image_brand' => 'img/adidas.jpg'
         ],
         [
-            'id' => 15,
-            'alt' => 'jordan',
+            'id' => 5,
+            "name" => "jordan",
+            'alt' => 'jordan img brand',
             'image_brand' => 'img/jordan.jpg'
         ],
         [
-            'id' => 16,
-            'alt' => 'newbarance',
+            'id' => 6,
+            "name" => "newbarance",
+            'alt' => 'newbarance img brand',
             'image_brand' => 'img/newbrance.jpg',
             'coment' => 'テキストテキストテキストテキストテキストテキストテキストテキスト'
         ],
