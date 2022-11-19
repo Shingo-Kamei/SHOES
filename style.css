@@ -20,14 +20,27 @@ main {
 }
 
 /* header */
-#header .shoes-title{
+.shoes-title{
     width: 100%;
     height: 90px;
     position: fixed;
     background-color: #fff;
+    font-size: -webkit-xxx-large;
+    text-shadow:
+    1px -1px 1px #BDBDBD,
+    -1px 2px 1px #737272,
+    -2px 4px 1px #767474,
+    -3px 6px 1px #787777,
+    -4px 8px 1px #424242,
+    -5px 10px 1px #616161,
+    -6px 12px 1px #757575,
+    -7px 14px 1px #9E9E9E,
+    -8px 16px 1px #BDBDBD,
+    -9px 18px 1px #E0E0E0;
+    padding-top: 8px;
     margin: 0;
     top: 0;
-    left: 0;
+    left: 5px;
 }
 
 nav {
@@ -41,6 +54,11 @@ nav {
     transition: all 0.5s;
     z-index: 3;
     opacity: 0;
+}
+
+.open nav {
+    left: 0;
+    opacity: 1;
 }
 
 nav .nav-menu{
@@ -109,6 +127,18 @@ nav .nav-menu ul li a:hover {
     transition: all 0.5s;
 }
 
+.open #mask {
+    display: block;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
 /* main */
 #video {
     width: 100%;
@@ -125,6 +155,7 @@ nav .nav-menu ul li a:hover {
     padding: 0;
     display: flex;
     overflow: hidden;
+    list-style: none;
 }
 
 .pick-pict li:first-child{
@@ -182,7 +213,9 @@ nav .nav-menu ul li a:hover {
     max-width: 1420px;
     margin: auto;
     padding-bottom: 30px;
-    gap: 20px;}
+    gap: 20px;
+    list-style: none;
+}
 
 .brand-pict img {
     width: 450px;
