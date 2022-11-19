@@ -28,9 +28,9 @@ $brand_list = $brand->fetchAll();
         <nav>
             <div class="nav-menu">
                 <ul>
-                    <li><a href="PICK UP">PICK UP</a></li>
-                    <li><a href="FEATURE">FEATURE</a></li>
-                    <li><a href="CONTACT">CONTACT</a></li>
+                    <li><a href="#pick-up">PICK UP</a></li>
+                    <li><a href="#brand">BRAND</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
                 </ul>
             </div>
         </nav>
