@@ -24,13 +24,25 @@ $brand_list = $brand->fetchAll();
 <header id="header">
     <h1 class="shoes-title">Outlet-Shoes</h1>
 
-    <nav id="nav">
-        <ul class="nav-menu">
-            <li><a href="#PICK UP">PICK UP</a></li>
-            <li><a href="FEATURE">FEATURE</a></li>
-            <li><a href="CONTACT">CONTACT</a></li>
-        </ul>
-    </nav>
+    <div id="hamburger-menu">
+        <nav>
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="PICK UP">PICK UP</a></li>
+                    <li><a href="FEATURE">FEATURE</a></li>
+                    <li><a href="CONTACT">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+    
+        <div class="toggle-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <div id="mask"></div>
 </header>
 
 
@@ -94,6 +106,6 @@ $brand_list = $brand->fetchAll();
     <p class="footer-title">company OutletShoes</p>
 </footer>
     
-    
+<script src="./script.js"></script>
 </body>
 </html>
