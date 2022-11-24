@@ -40,9 +40,10 @@ $brand_list = $brand->fetchAll();
             <span></span>
             <span></span>
         </div>
+
+        <div id="mask"></div>
     </div>
 
-    <div id="mask"></div>
 </header>
 
 
