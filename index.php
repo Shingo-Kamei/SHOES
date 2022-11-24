@@ -54,11 +54,18 @@ $brand_list = $brand->fetchAll();
 
     <section id="pick-up">
         <h2 class="sec-title">PICK UP</h2>
-        <ul class="pick-pict">
-            <?php foreach($shoes_list as $shoes):?>
-                <li><img src="<?=$shoes["image_path"];?>" alt="" class='<?= $shoes["name"]?>'></li>
-            <?php endforeach;?>
-        </ul>
+        <div class="pick-list">
+            <ul class="pick-pict">
+                <?php foreach($shoes_list as $shoes):?>
+                    <li><img src="<?=$shoes["image_path"];?>" alt="" class='<?= $shoes["name"]?>'></li>
+                <?php endforeach;?>
+            </ul>
+            <ul class="pick-pict">
+                <?php foreach($shoes_list as $shoes):?>
+                    <li><img src="<?=$shoes["image_path"];?>" alt="" class='<?= $shoes["name"]?>'></li>
+                <?php endforeach;?>
+            </ul>
+        </div>
     </section>
 
     <section id="brand">

@@ -7,13 +7,19 @@ body {
     color: #121212;
     font-size: 0.9rem;
     line-height: 1.7;
+    /* min-width: 1076px; */
+}
+
+header {
+    z-index: 10;
+    position: fixed;
 }
 
 main {
     max-width: 100%;
 }
 
-.sec-title{
+.sec-title {
     text-align: center;
     font-size: 2.25rem;
     margin-bottom: 30px;
@@ -21,23 +27,23 @@ main {
 }
 
 /* header */
-.shoes-title{
+.shoes-title {
     width: 100%;
     height: 90px;
     position: fixed;
     background-color: #fff;
     font-size: -webkit-xxx-large;
     text-shadow:
-    1px -1px 1px #BDBDBD,
-    -1px 2px 1px #737272,
-    -2px 4px 1px #767474,
-    -3px 6px 1px #787777,
-    -4px 8px 1px #424242,
-    -5px 10px 1px #616161,
-    -6px 12px 1px #757575,
-    -7px 14px 1px #9E9E9E,
-    -8px 16px 1px #BDBDBD,
-    -9px 18px 1px #E0E0E0;
+        1px -1px 1px #BDBDBD,
+        -1px 2px 1px #737272,
+        -2px 4px 1px #767474,
+        -3px 6px 1px #787777,
+        -4px 8px 1px #424242,
+        -5px 10px 1px #616161,
+        -6px 12px 1px #757575,
+        -7px 14px 1px #9E9E9E,
+        -8px 16px 1px #BDBDBD,
+        -9px 18px 1px #E0E0E0;
     /* padding-top: 8px; */
     margin: 0;
     top: 0;
@@ -48,13 +54,13 @@ nav {
     display: block;
     width: 220px;
     position: fixed;
-    background-color: #ffffff;
+    background-color: #fff;
     top: 0;
     left: -300px;
     bottom: 0;
     transition: all 0.5s;
     z-index: 3;
-    opacity: 0;
+    opacity: 1.2;
 }
 
 .open nav {
@@ -62,7 +68,7 @@ nav {
     opacity: 1;
 }
 
-nav .nav-menu{
+nav .nav-menu {
     padding: 25px;
 }
 
@@ -93,6 +99,7 @@ nav .nav-menu ul li a:hover {
 .toggle-btn {
     display: block;
     position: fixed;
+    z-index: 20;
     top: 30px;
     right: 30px;
     width: 30px;
@@ -119,6 +126,7 @@ nav .nav-menu ul li a:hover {
 .toggle-btn span:nth-child(2) {
     top: 14px;
 }
+
 .toggle-btn span:nth-child(3) {
     bottom: 4px;
 }
@@ -142,6 +150,7 @@ nav .nav-menu ul li a:hover {
 
 /* main */
 #video {
+    /* min-width: 1076px; */
     width: 100%;
 }
 
@@ -151,59 +160,62 @@ nav .nav-menu ul li a:hover {
 
 
 /* pick up */
-.pick-pict {
-    width: 100%;
-    padding: 0;
+.pick-list {
+    position: relative;
     display: flex;
+    width: 100vw;
     overflow: hidden;
-    list-style: none;
 }
 
-.pick-pict li:first-child{
-    -webkit-animation: loop 20s -10s linear infinite;
-    animation: loop 20s -10s linear infinite;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-    will-change: transform;
-}
-
-.pick-pict li{
-    -webkit-animation: loop2 20s linear infinite;
-    animation: loop2 20s linear infinite;
-}
-
-@keyframes loop {
-    0% {
-      -webkit-transform: translateX(100%);
-      -ms-transform: translateX(100%);
-      transform: translateX(100%);
-    }
-    to {
-      -webkit-transform: translateX(-100%);
-      -ms-transform: translateX(-100%);
-      transform: translateX(-100%);
-    }
-  }
-  
-  @keyframes loop2 {
-    0% {
-      -webkit-transform: translateX(0);
-      -ms-transform: translateX(0);
-      transform: translateX(0);
-    }
-    to {
-      -webkit-transform: translateX(-200%);
-      -ms-transform: translateX(-200%);
-      transform: translateX(-200%);
-    }
-  }
-  
-
-.pick-pict img{
-    width: 350px;
-    height: 200px;
+.pick-list img {
+    display: block;
+    width: 250px;
+    height: 150px;
     object-fit: cover;
-    padding: 0 30px 0 30px;
+
+}
+
+.pick-list ul {
+    padding: 0;
+    width: 100vw;
+    display: flex;
+    flex-shrink: 0;
+}
+
+.pick-list li {
+    display: inline-block;
+    width: 100%;
+    list-style: none;
+    text-align: center;
+}
+
+.pick-list ul:first-child {
+    animation: slide1 60s -30s linear infinite;
+}
+
+.pick-list ul:last-child {
+    animation: slide2 60s linear infinite;
+}
+
+
+@keyframes slide1 {
+    0% {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes slide2 {
+    0% {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-200%);
+    }
 }
 
 /* brand */
@@ -230,12 +242,12 @@ nav .nav-menu ul li a:hover {
 
 .brand-content {
     display: block;
+    margin-left: 5%;
 }
 
 /* contact */
 #contact {
     width: 100%;
-    height: 740px;
     background-color: #121212;
     color: #fff;
 }
@@ -243,7 +255,6 @@ nav .nav-menu ul li a:hover {
 .contact-area {
     display: flex;
     justify-content: space-around;
-    margin: 70px;
     padding: 55px;
 }
 
@@ -262,19 +273,17 @@ nav .nav-menu ul li a:hover {
 }
 
 .desc-center {
-    width: 700px;
+    /* width: 700px; */
     padding-bottom: 30px;
 }
 
 .desc-under {
-    width: 700px;
+    /* width: 700px; */
     padding-bottom: 30px;
 }
 
-.contact-text {}
-
 .contact-text #name {
-    width:70%;
+    width: 70%;
     height: 35px;
 }
 
@@ -284,7 +293,7 @@ nav .nav-menu ul li a:hover {
 }
 
 .contact-text #email {
-    width:70%;
+    width: 70%;
     height: 35px;
 }
 
@@ -294,7 +303,7 @@ nav .nav-menu ul li a:hover {
 }
 
 .contact-text #message {
-    width:70%;
+    width: 70%;
     height: 70px;
 }
 
@@ -304,7 +313,8 @@ nav .nav-menu ul li a:hover {
 }
 
 #btn {
-    width: 25%;
+    /* width: 25%; */
+    width: 70%;
     height: 55px;
     background-color: #121212;
     color: #fff;
@@ -320,4 +330,105 @@ nav .nav-menu ul li a:hover {
 
 .footer-title {
     margin-top: auto;
+}
+
+/* レスポンシブ対応 */
+@media screen and (max-width:480px) {
+
+    html {
+        overflow-x: hidden;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .sec-title {
+        margin-left: 8%;
+    }
+
+    /* header */
+    .shoes-title {
+        font-size: 25px;
+    }
+
+    /* main */
+    #video {}
+
+    .video-loop {
+        width: 100%;
+        margin-top: 100px;
+    }
+
+    /* pick up */
+
+    .pick-list img {
+        display: block;
+        width: 130px;
+        height: 130px;
+        object-fit: cover;
+    }
+
+    /* brand */
+    .brand-pict {
+        padding-left: 0;
+    }
+
+    .brand-pict img {}
+
+    .brand-content {
+        margin-left: 25%;
+    }
+
+    .brand-text {}
+
+    /*contact */
+    .contact-area {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .desc-top {
+        width: 100%;
+    }
+
+    .description {
+        width: auto;
+        margin-left: 30px;
+    }
+
+    .desc-center {
+        width: 90%;
+    }
+
+    .desc-under {}
+
+    .contact-text #name {
+        width: 100%;
+        height: 40px;
+    }
+
+    .contact-text #email {
+        width: 100%;
+        height: 40px;
+    }
+
+    .text-message {
+        padding-bottom: 10px;
+    }
+
+    .contact-text #message {
+        width: 100%;
+        height: 80px;
+        padding-bottom: 10px;
+    }
+
+    #btn {
+        width: 70%;
+        height: 45px;
+    }
+
+    .button {
+        padding-bottom: 10px;
+    }
 }

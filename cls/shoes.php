@@ -39,30 +39,30 @@ class Shoes
             "image_path" => "img/samuel-lopes-FUR3LNiI2jc-unsplash.jpg", 
             "name" => "img1"
         ],
-        [
-            "id"=>7,
-            "alt" => "nike",
-            "image_path" => "img/shoes-g0f1f7ff07_1920.jpg",
-            "name" => "img1"
-        ],
-        [
-            "id"=>8,
-            "alt" => "nike",
-            "image_path" => "img/shoes-g26555a929_1920.jpg",
-            "name" => "img1"
-        ],
-        [
-            "id"=>9,
-            "alt" => "nike",
-            "image_path" => "img/sneakers-g34ccb7d1b_1920.jpg",
-            "name" => "img1"
-        ],
-        [
-            "id"=>10,
-            "alt" => "nike",
-            "image_path" => "img/sneakers-g39d6c4dcb_1920.jpg",
-            "name" => "img1"
-        ],
+        // [
+        //     "id"=>7,
+        //     "alt" => "nike",
+        //     "image_path" => "img/shoes-g0f1f7ff07_1920.jpg",
+        //     "name" => "img1"
+        // ],
+        // [
+        //     "id"=>8,
+        //     "alt" => "nike",
+        //     "image_path" => "img/shoes-g26555a929_1920.jpg",
+        //     "name" => "img1"
+        // ],
+        // [
+        //     "id"=>9,
+        //     "alt" => "nike",
+        //     "image_path" => "img/sneakers-g34ccb7d1b_1920.jpg",
+        //     "name" => "img1"
+        // ],
+        // [
+        //     "id"=>10,
+        //     "alt" => "nike",
+        //     "image_path" => "img/sneakers-g39d6c4dcb_1920.jpg",
+        //     "name" => "img1"
+        // ],
     ];
 
     public function fetchAll()
