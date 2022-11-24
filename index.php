@@ -1,6 +1,7 @@
 <?php
 include("./cls/shoes.php");
 include("./cls/brand.php");
+include_once("index.html");
 
 $shoes = new Shoes();
 $shoes_list = $shoes->fetchAll();
