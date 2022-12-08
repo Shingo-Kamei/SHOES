@@ -1,13 +1,14 @@
 html {
     font-size: 100%;
     scroll-behavior: smooth;
-    
+    overflow-x: hidden;
 }
 
 body {
     color: #121212;
     font-size: 0.9rem;
     line-height: 1.7;
+    overflow-x: hidden;
     /* min-width: 1076px; */
 }
 
